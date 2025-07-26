@@ -1,37 +1,53 @@
-# Homebrew Tap
+# Ma‑Kas Homebrew Tap
 
-This repository holds formulae that can be installed with [brew](https://brew.sh).
+This repository hosts casks/formulae that can be installed via [Homebrew](https://brew.sh).
 
-## How To
-
-To install a program you first need to `brew
-tap` this repository to get the formulae. See [tap](https://docs.brew.sh/brew-tap.html) docs for more on `brew tap`.
+## Install this tap
 
 Open a terminal and run the following `brew` command:
 
-```sh
+```bash
 brew tap Ma-Kas/tap
 ```
 
-This command will clone the repository to your computer and make the
-formulae availabe. You can then install each program with brew, e.g.
+This command adds the tap so its packages are available on your machine. You can list your taps with:
 
-```sh
-brew install paymostats
+```bash
+brew tap
 ```
-to install [paymostats](https://github.com/Ma-Kas/paymostats).
 
-For updates, simply run
-```sh
+## Install packages from this tap
+
+For example, to install [paymostats](https://github.com/Ma-Kas/paymostats):
+
+```bash
+brew install paymostats
+# or, explicitly as a cask if you prefer
+brew install --cask paymostats
+```
+
+For updates, simply run:
+```bash
 brew upgrade paymostats
 ```
+
+Uninstall:
+
+```bash
+brew uninstall --cask paymostats
+```
+
+Show details:
+
+```bash
+brew info paymostats
+```
+
+## Packages in this tap
+
+* **paymostats** — Small CLI tool to display Paymo stats within a given range. Source: https://github.com/Ma-Kas/paymostats
 
 ## Feedback
 
 Feel free to leave an issue in this repository related to brew issues. 
-For software related issues see the projects repository. To find a
-project repository run `brew info`, for example with `paymostats`
-
-```sh
-$ brew info paymostats
-```
+For software related issues see the projects repository.
