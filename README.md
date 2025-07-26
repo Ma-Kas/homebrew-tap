@@ -30,6 +30,12 @@ For updates, simply run:
 ```bash
 brew upgrade paymostats
 ```
+This is normally enough, but if brew reports `Warning: Not upgrading paymostats, the latest version is already installed`, even though you see a newer release on GitHub, run:
+```bash
+brew update
+brew upgrade paymostats
+```
+to force a local cask update.
 
 Uninstall:
 
